@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 700px;
+            width: 700px;
+
+            gap: 20px;
+            border: 2px solid black;
+            --dark-purple:#b509f9;
+            background-color:var(--dark-purple);
+
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            border: 2px solid orange;
+            background-color: rgb(225, 6, 174);
+            transition: 2s;
+            margin: 30px;
+            /* transition-delay:2s; */
+            transition: tansform 1s ease 3s;
+
+            /* transition: background-image 0.3s ease 3s; */
+            transform: transform 5s ease 1s;
+
+            transform: all 5s ease 1s;
+            
+            transition: transform 3s ease-in;
+             
+        }
+        .box:hover{
+            width: 500px;
+            border-radius: 200px;
+            background-image: radial-gradient(yellow,orange,pink,blue,black,purple,white,orange);
+
+            transform: rotate(550deg);
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div><br><br>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
